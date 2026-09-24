@@ -1,0 +1,16 @@
+// LeetCode 1470 - Shuffle the Array
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+//code
+class Solution {
+public:
+    vector<int> shuffle(vector<int>& nums, int n) {
+        vector<int>ans;
+        int i;
+        for(i=0; i < n ; i++){
+            ans.push_back(nums[i]);
+            ans.push_back(nums[n + i]);
+        }7 
+        return ans;
+    }
+};
